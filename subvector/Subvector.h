@@ -11,9 +11,9 @@ public:
 
 
     Subvector(){
-         top = 0;
-         capacity = 0;
-         mas = NULL;
+        capacity = 0;
+        top = 0;
+        mas = NULL;
     }
 
 
