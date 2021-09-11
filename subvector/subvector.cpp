@@ -4,10 +4,7 @@ struct subvector{
     unsigned int capacity;
 };
 
-
 bool init(subvector *qv);                                  //инициализация пустого недовектора
-
-
 bool push_back(subvector *qv, int d);                      //добавление элемента в конец недовектора
                                                            //с выделением дополнительной памяти при необходимости
 
