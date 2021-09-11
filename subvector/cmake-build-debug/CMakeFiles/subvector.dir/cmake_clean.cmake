@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/subvector.dir/subvector_profiler.cpp.obj"
-  "libsubvector.dll.a"
+  "CMakeFiles/subvector.dir/main.cpp.obj"
   "subvector.exe"
   "subvector.exe.manifest"
+  "subvector.lib"
   "subvector.pdb"
 )
 
