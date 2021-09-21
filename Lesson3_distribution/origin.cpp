@@ -80,14 +80,5 @@ public:
     }
 };
 
-int main(int argc, const char * argv[]) {
-    DiscreteState d(50);
-    SegmentState s(0,10);
-    SetState ss({1, 3, 5, 7, 23, 48, 57, 60, 90, 99});
-    ProbabilityTest pt(10,0,100,100000);
-    std::cout << pt(d) << std::endl;
-    std::cout << pt(s) << std::endl;
-    std::cout << pt(ss) << std::endl;
-    return 0;
-}
+
 
