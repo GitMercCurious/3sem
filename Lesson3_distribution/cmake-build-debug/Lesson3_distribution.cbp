@@ -80,6 +80,33 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/ContExceptionState.h">
+			<Option target="Lesson3_distribution"/>
+		</Unit>
+		<Unit filename="D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/DiscreteState.h">
+			<Option target="Lesson3_distribution"/>
+		</Unit>
+		<Unit filename="D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/ProbabilityTest.h">
+			<Option target="Lesson3_distribution"/>
+		</Unit>
+		<Unit filename="D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/SegmentState.h">
+			<Option target="Lesson3_distribution"/>
+		</Unit>
+		<Unit filename="D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/SetState.h">
+			<Option target="Lesson3_distribution"/>
+		</Unit>
+		<Unit filename="D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/State.h">
+			<Option target="Lesson3_distribution"/>
+		</Unit>
+		<Unit filename="D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/StateEngine.h">
+			<Option target="Lesson3_distribution"/>
+		</Unit>
+		<Unit filename="D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/Unform_distribution.h">
+			<Option target="Lesson3_distribution"/>
+		</Unit>
+		<Unit filename="D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/libs.h">
+			<Option target="Lesson3_distribution"/>
+		</Unit>
 		<Unit filename="D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/main.cpp">
 			<Option target="Lesson3_distribution"/>
 		</Unit>
