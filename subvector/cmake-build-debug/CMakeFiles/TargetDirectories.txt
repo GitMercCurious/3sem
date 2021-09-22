@@ -1,3 +1,3 @@
-D:/Programming/Git/GitMercCurious/3sem/subvector/cmake-build-debug/CMakeFiles/subvector.dir
-D:/Programming/Git/GitMercCurious/3sem/subvector/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Programming/Git/GitMercCurious/3sem/subvector/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Kolya/3sem/subvector/cmake-build-debug/CMakeFiles/subvector.dir
+C:/Users/Kolya/3sem/subvector/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Kolya/3sem/subvector/cmake-build-debug/CMakeFiles/rebuild_cache.dir
