@@ -1,17 +1,16 @@
 #include <iostream>
 #include <set>
 #include <random>
-#include <utility>
 #include <iomanip>
 
-
+template<typename T>
 class State{
 public:
-    [[nodiscard]] virtual bool contains(int st) const = 0;
+    [[nodiscard]] virtual bool contains(T st) const = 0;
 };
 
 
-class DiscreteState: public State{
+class DiscreteState: public State<int>{
 private:
     int const value;
 public:
@@ -26,7 +25,7 @@ public:
 };
 
 
-class SegmentState: public State{
+class SegmentState: public State<int>{
 private:
     int const beg, end;
 public:
@@ -42,7 +41,7 @@ public:
 };
 
 
-class SetState: public State{
+class SetState: public State<int>{
 private:
     std::set<int> const states;
 public:
@@ -55,6 +54,41 @@ public:
 };
 
 
+template<typename T>
+class Uniform_distribution{};
+
+
+template<>
+class Uniform_distribution<int> {
+private:
+    std::uniform_int_distribution<int> dstr;
+public:
+    Uniform_distribution(int _min, int _max){
+        dstr = std::uniform_int_distribution<int>(_min, _max);
+    }
+
+    int operator() (std::default_random_engine &rng) {
+        return dstr(rng);
+    }
+};
+
+
+template<>
+class Uniform_distribution<float> {
+private:
+    std::uniform_real_distribution<float> dstr;
+public:
+    Uniform_distribution(float _min, float _max){
+        dstr = std::uniform_real_distribution<float>(_min, _max);
+    }
+
+    int operator() (std::default_random_engine &rng) {
+        return dstr(rng);
+    }
+};
+
+
+template<typename T>
 class ProbabilityTest {
 private:
     unsigned seed;
@@ -65,9 +99,9 @@ public:
     ProbabilityTest(unsigned seed, int test_min, int test_max, unsigned test_count):
     seed(seed), test_min(test_min), test_max(test_max), test_count(test_count) { }
 
-    float operator()(State const &s) const {
+    float operator()(State<T> const &s) const {
         std::default_random_engine rng(seed);
-        std::uniform_int_distribution<int> dstr(test_min,test_max);
+        Uniform_distribution<T> dstr(test_min,test_max);
         unsigned good = 0;
         for (unsigned cnt = 0; cnt != test_count; ++cnt)
             if (s.contains(dstr(rng))) ++good;
@@ -80,10 +114,13 @@ int main() {
     DiscreteState d(50);
     SegmentState s(0,9);
     SetState ss({1, 3, 5, 7, 23, 57, 60, 90, 99});
-    ProbabilityTest pt(175,0,99,1000000);
-    std::cout << std::fixed << std::setprecision(5);
-    std::cout << pt(d) << std::endl;
-    std::cout << pt(s) << std::endl;
-    std::cout << pt(ss) << std::endl;
+
+    ProbabilityTest<int> pt_d(175,0,99,1000000);
+    //ProbabilityTest<double> pt_c(175, 0, 99, 1000000);
+
+    //std::cout << std::fixed << std::setprecision(7);
+    std::cout << pt_d(d) << std::endl;
+    std::cout << pt_d(s) << std::endl;
+    std::cout << pt_d(ss) << std::endl;
     return 0;
 }
