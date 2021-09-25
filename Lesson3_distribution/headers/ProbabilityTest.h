@@ -17,7 +17,7 @@ public:
 
     float operator()(State<T> const &s) const {
         std::default_random_engine rng(seed);
-        Uniform_distribution<T> dstr(test_min,test_max);
+        Uniform_distribution<T> dstr(test_min, test_max);
         unsigned good = 0;
         for (unsigned cnt = 0; cnt != test_count; ++cnt)
             if (s.contains(dstr(rng), precise)) ++good;

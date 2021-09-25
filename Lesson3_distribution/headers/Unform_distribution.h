@@ -8,6 +8,21 @@ class Uniform_distribution{};
 
 
 template<>
+class Uniform_distribution<double> {
+private:
+    std::uniform_real_distribution<double> dstr{};
+public:
+    [[maybe_unused]] Uniform_distribution(double _min, double _max){
+        dstr = std::uniform_real_distribution<double>(_min, _max);
+    }
+
+    double operator() (std::default_random_engine &rng) {
+        return dstr(rng);
+    }
+};
+
+
+template<>
 class Uniform_distribution<int> {
 private:
     std::uniform_int_distribution<int> dstr{};
@@ -31,7 +46,7 @@ public:
         dstr = std::uniform_real_distribution<float>(_min, _max);
     }
 
-    int operator() (std::default_random_engine &rng) {
+    float operator() (std::default_random_engine &rng) {
         return dstr(rng);
     }
 };

@@ -5,5 +5,7 @@
 #include <set>
 #include <random>
 #include <iomanip>
+#include <algorithm>
+#include <iterator>
 
 #endif //LESSON3_DISTRIBUTION_LIBS_H

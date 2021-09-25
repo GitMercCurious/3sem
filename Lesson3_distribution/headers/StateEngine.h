@@ -5,5 +5,6 @@
 #include "SegmentState.h"
 #include "SetState.h"
 #include "ContExceptionState.h"
+#include "ContAddingState.h"
 
 #endif //LESSON3_DISTRIBUTION_STATEENGINE_H
