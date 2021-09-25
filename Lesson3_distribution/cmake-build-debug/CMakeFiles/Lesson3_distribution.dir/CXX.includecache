@@ -6,9 +6,27 @@
 
 #IncludeRegexTransform: 
 
+D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/AndState.h
+State.h
+D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/State.h
+
+D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/ContAddingState.h
+State.h
+D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/State.h
+SetAddings.h
+D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/SetAddings.h
+
 D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/ContExceptionState.h
+State.h
+D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/State.h
+SetAddings.h
+D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/SetAddings.h
 
 D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/DiscreteState.h
+State.h
+D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/State.h
+
+D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/OrState.h
 State.h
 D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/State.h
 
@@ -19,6 +37,10 @@ D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/Unform_distr
 D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/SegmentState.h
 State.h
 D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/State.h
+
+D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/SetAddings.h
+libs.h
+D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/libs.h
 
 D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/SetState.h
 State.h
@@ -37,10 +59,22 @@ SetState.h
 D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/SetState.h
 ContExceptionState.h
 D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/ContExceptionState.h
+ContAddingState.h
+D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/ContAddingState.h
+OrState.h
+D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/OrState.h
+AndState.h
+D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/AndState.h
+XorState.h
+D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/XorState.h
 
 D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/Unform_distribution.h
 libs.h
 D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/libs.h
+
+D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/XorState.h
+State.h
+D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/State.h
 
 D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/libs.h
 iostream
@@ -51,12 +85,16 @@ random
 -
 iomanip
 -
+algorithm
+-
+iterator
+-
 
 D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/main.cpp
+headers/libs.h
+D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/libs.h
 headers/StateEngine.h
 D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/StateEngine.h
 headers/ProbabilityTest.h
 D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/ProbabilityTest.h
-headers/libs.h
-D:/Programming/Git/GitMercCurious/3sem/Lesson3_distribution/headers/libs.h
 
